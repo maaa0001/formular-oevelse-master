@@ -28,22 +28,12 @@
         <form name="first-form" netlify>
           <!-- Formular-indhold -->
           <div class="form-felt">
-            <label for="fnavn">Fornavn</label>
+            <label for="navn">Navn</label>
             <input
               type="text"
-              id="fnavn"
+              id="navn"
               name="navn"
-              autocomplete="given-name"
-              required
-            />
-          </div>
-          <div class="form-felt">
-            <label for="lnavn">Efternavn</label>
-            <input
-              type="text"
-              id="lnavn"
-              name="navn"
-              autocomplete="family-name"
+              autocomplete="name"
               required
             />
           </div>
@@ -52,12 +42,38 @@
             <input type="email" id="email" name="email" required />
           </div>
           <div class="form-felt">
+            <label for="tele">Telefon</label>
+            <input
+              type="text"
+              id="tele"
+              name="navn"
+              autocomplete="tel"
+              required
+            />
+          </div>
+
+          <div class="checkbox-container">
+            <div class="checkbox-item">
+              <img src="img/Logo.png" alt="Billede 1" class="checkbox-image" />
+              <label for="checkbox1" class="checkbox-label">Vægsystem</label>
+              <input type="checkbox" id="checkbox1" />
+            </div>
+
+            <div class="checkbox-item">
+              <img src="img/Logo.png" alt="Billede 2" class="checkbox-image" />
+              <label for="checkbox2" class="checkbox-label">Glassystem</label>
+              <input type="checkbox" id="checkbox2" />
+            </div>
+          </div>
+
+          <div class="form-felt">
             <label>
-              Profil
+              System
               <select name="liste">
-                <option value="">Vælg profil</option>
-                <option value="underviser">Underviser</option>
-                <option value="studerende">Studerende</option>
+                <option value="">Vælg system</option>
+                <option value="underviser">Vægsystem</option>
+                <option value="studerende">Glassystem</option>
+                <option value="studerende">Vægsystem og Glassystem</option>
               </select>
             </label>
           </div>

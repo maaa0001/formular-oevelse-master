@@ -11,3 +11,29 @@ form {
   display: grid;
   gap: 3px;
 }
+
+/*** Kontaktformular ***/
+body {
+  justify-content: center;
+  align-items: center;
+}
+.checkbox-container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.checkbox-item {
+  display: inline-block;
+  margin: 10px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkbox-image {
+  max-width: 30%;
+  height: auto;
+}
